@@ -1,0 +1,39 @@
+{
+  "versionLabel": "1",
+  "versionId": "1",
+  "deploymentStatus": {
+    "state": "NEW"
+  },
+  "agentInfo": {
+    "languageCode": "en-US",
+    "projectId": "hello-world-action",
+    "voiceName": "female_1",
+    "invocationNames": [
+      "spartan test"
+    ]
+  },
+  "actions": [
+    {
+      "description": "Launch intent",
+      "initialTrigger": {
+        "intent": "assistant.intent.action.MAIN"
+      },
+      "httpExecution": {
+        "url": "https://"
+      }
+    },
+    {
+      "description": "Yes or no",
+      "initialTrigger": {
+        "intent": "com.spartan.YesNoIntent",
+        "queryPatterns": [
+          { "queryPattern": "yes" },
+          { "queryPattern": "no" }
+        ]
+      },
+      "httpExecution": {
+        "url": "https://"
+      }
+    }
+  ]
+}
