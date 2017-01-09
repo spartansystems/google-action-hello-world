@@ -19,7 +19,7 @@
         "intent": "assistant.intent.action.MAIN"
       },
       "httpExecution": {
-        "url": "https://"
+        "url": "https://4jjsun89dk.execute-api.us-east-1.amazonaws.com/dev/"
       }
     },
     {
@@ -27,12 +27,12 @@
       "initialTrigger": {
         "intent": "com.spartan.YesNoIntent",
         "queryPatterns": [
-          { "queryPattern": "yes" },
-          { "queryPattern": "no" }
+          { "queryPattern": "hamburger" },
+          { "queryPattern": "french fries" }
         ]
       },
       "httpExecution": {
-        "url": "https://"
+        "url": "https://4jjsun89dk.execute-api.us-east-1.amazonaws.com/dev/"
       }
     }
   ]
